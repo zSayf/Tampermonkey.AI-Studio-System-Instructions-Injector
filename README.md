@@ -1,51 +1,64 @@
-# Tampermonkey AI Studio System Instructions Injector
+# AI Studio System Instructions Injector
 
-Supercharge your Google AI Studio workflow with the ultimate power-user script. This Tampermonkey script provides a professional, fully-controllable interface to rapidly inject your custom system instructions, only appearing when it's actually needed.
+[![Greasy Fork Version](https://img.shields.io/greasyfork/v/551234?label=Greasy%20Fork&logo=tampermonkey&color=6a1b9a)](https://greasyfork.org/en/scripts/551234-ai-studio-system-instructions-injector)
+[![Total Installs](https://img.shields.io/greasyfork/dt/551234?label=Installs&logo=tampermonkey)](https://greasyfork.org/en/scripts/551234-ai-studio-system-instructions-injector)
+[![GitHub License](https://img.shields.io/github/license/zSayf/Tampermonkey.AI-Studio-System-Instructions-Injector)](https://github.com/zSayf/Tampermonkey.AI-Studio-System-Instructions-Injector/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/zSayf/Tampermonkey.AI-Studio-System-Instructions-Injector)](https://github.com/zSayf/Tampermonkey.AI-Studio-System-Instructions-Injector/commits/main)
 
-![Showcase](https://i.imgur.com/your-gif-url.gif)  <!-- You can create a short GIF showcasing the script in action and replace this URL -->
+The definitive power-user script to supercharge your workflow in Google AI Studio. It provides a seamless and intelligent way to manage and inject your custom system instructions, designed to be fast, unobtrusive, and fully integrated with your workflow.
+
+![Script Demo GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDVwdmYwbXZjZG9sZWN5ZWs1dm1zcnNkM3JsMmVyZ2NsZDJkMDkyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F7a9IbhJbmM2vf3UlR/giphy.gif)
 
 ---
 
-## ✨ Core Features
+## ✨ Key Features
 
-This script was built from the ground up to be smart, efficient, and unobtrusive.
-
-- **🚀 Instant, Flicker-Free Check**: On page load and between navigating chats, the script performs an instant check by reading the page's state. The UI button **only appears if your instructions aren't already there**, giving you a completely clean workspace.
-- **⚡ 'One-Shot' Workflow**: A single click on the sleek bottom-tab button performs a full sequence: it opens the panel, injects your text, closes the panel, and then hides itself.
-- **🔒 Safety First**: Intelligently detects if instructions already exist. Instead of blindly overwriting, it presents a clean confirmation dialog (`Overwrite` / `Cancel`) to protect your work.
-- **🎨 Professional UI**: Replaces all ugly native browser `prompt()` and `alert()` boxes with a custom-themed, non-blocking UI, including modals and toast notifications that match the AI Studio aesthetic.
-- **🧠 SPA-Aware**: Fully aware of AI Studio's single-page application structure. The script automatically re-runs its check whenever you switch between different chats, ensuring it's always relevant to the conversation you're in.
-- **⚙️ Total Control & Customization**:
-    - **First Run Setup**: On first use, it prompts you to set your own default instructions.
-    - **Easy Editing**: Edit your saved instructions anytime via a right-click on the button or a dedicated command in the Tampermonkey menu.
-    - **Closable Button**: Don't want to see the button? Click the '×' to hide it for the session or permanently.
-    - **Full Menu Integration**: Control everything from the Tampermonkey menu, including editing, direct injection (perfect if the button is hidden), and an option to re-show the button if you've hidden it forever.
+*   **⚡ Instant, Flicker-Free Check**: On page load and when switching between chats, the script instantly checks if your instructions are already present by reading the UI directly. The button **only appears if needed**, giving you a clean workspace.
+*   **🧠 SPA-Aware**: Fully compatible with AI Studio's single-page application design. The script automatically re-evaluates each chat you navigate to, ensuring context-aware functionality.
+*   **🚀 One-Shot Workflow**: A single click on the sleek UI button is all it takes. It opens the panel, injects your text, closes the panel, and hides itself for maximum efficiency.
+*   **🛡️ Safety First**: Intelligently detects if the instruction field already has text. Instead of blindly overwriting, it presents a clear confirmation dialog (`Overwrite` / `Cancel`) to protect your work.
+*   **🎨 Professional UI**: Replaces all native browser dialogs with a custom-themed, professional UI that matches the AI Studio aesthetic, including non-blocking toast notifications.
+*   **🔧 Total Control & Customization**:
+    *   **First Run Setup**: On first use, you'll be prompted to set your own instructions.
+    *   **Easy Editing**: Edit saved instructions anytime via a right-click on the button or through the Tampermonkey menu.
+    *   **Closable Button**: Don't want to see the button? A small `X` allows you to hide it for the current session or permanently.
+*   **🔗 Full Menu Integration**: Control everything directly from the Tampermonkey script menu:
+    *   `Edit System Instructions`: Open the editor.
+    *   `Inject Instructions (from Menu)`: Run the injection sequence, perfect for when the button is hidden.
+    *   `► (Re)Show Button`: Easily bring the button back if you've hidden it permanently.
 
 ---
 
 ## 🛠️ Installation
 
-1.  **Install a User Script Manager**: You need a browser extension to run this script. The most popular one is [**Tampermonkey**](https://www.tampermonkey.net/).
-2.  **Install the Script**: Click on the installation link (e.g., from Greasy Fork) and your script manager will prompt you to install it.
-3.  **Done!**: Simply navigate to [Google AI Studio](https://aistudio.google.com/), and the script will run automatically.
+1.  First, you need a user script manager. The most popular one is **[Tampermonkey](https://www.tampermonkey.net/)**.
+2.  Click the link below to install the script from Greasy Fork:
+    *   **[Install from Greasy Fork](https://greasyfork.org/en/scripts/551234-ai-studio-system-instructions-injector)**
 
 ---
 
-## 🕹️ How to Use
+## 📖 How to Use
 
-- **First Use**: Upon first launch, a professional-looking dialog will appear, asking you to enter and save your custom system instructions. This text will be saved locally in your browser.
-- **Injecting Instructions**: If the script detects that the current chat does not have your instructions, a "INJECTOR" button will appear at the bottom of the page.
-  - Click it once to perform the 'one-shot' inject, close, and hide sequence.
-  - If the field already has text, a confirmation dialog will appear.
-- **Editing Instructions**:
-  - **Method 1**: Right-click the "INJECTOR" button.
-  - **Method 2**: Click the Tampermonkey extension icon in your browser, and select "Edit System Instructions".
-- **Hiding/Showing the Button**:
-  - **To Hide**: Click the small '×' on the button to hide it temporarily (for the session) or permanently.
-  - **To Re-Show**: If you've hidden it permanently, click the Tampermonkey icon and select "► (Re)Show Button", then refresh the page.
+1.  **First Run**: After installation, the script will prompt you to enter and save your custom system instructions. This only happens once.
+2.  **Main Workflow**: A sleek button will appear at the bottom of the page if the current chat's instructions don't match yours.
+    *   **Click** the button to perform the "one-shot" inject, close, and hide sequence.
+    *   **Right-click** the button to open the editor and change your saved instructions.
+3.  **Menu Controls**: For more options, click the Tampermonkey extension icon in your browser to access all the script's commands, including the option to re-show the main button.
 
 ---
+
+## 📸 Screenshots
+
+| Sleek & Unobtrusive UI | Professional Dialogs | Full Menu Control |
+| :---: | :---: | :---: |
+| ![The 'One-Shot' button appears at the bottom of the screen only when needed.](https://i.imgur.com/LOyQ9Az.png) | ![Custom-themed dialog for setting instructions.](https://i.imgur.com/3KCUJpG.png) | ![Control everything from the Tampermonkey menu.](https://i.imgur.com/RFhP38R.png) |
+
+---
+
+## 🤝 Contributing & Feedback
+
+Found a bug or have a feature request? Please open an issue on the [GitHub repository issues page](https://github.com/zSayf/Tampermonkey.AI-Studio-System-Instructions-Injector/issues).
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
