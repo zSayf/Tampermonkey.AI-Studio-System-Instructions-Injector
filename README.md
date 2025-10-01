@@ -8,7 +8,7 @@
 The definitive power-user script to supercharge your workflow in Google AI Studio. It provides a seamless and intelligent way to manage and inject your custom system instructions, designed to be fast, unobtrusive, and fully integrated with your workflow.
 
 <p align="center">
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDVwdmYwbXZjZG9sZWN5ZWs1dm1zcnNkM3JsMmVyZ2NsZDJkMDkyNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F7a9IbhJbmM2vf3UlR/giphy.gif" alt="Script Demo GIF" width="80%">
+  <img src="https://pouch.jumpshare.com/preview/97tE-a0YWptCR_RE6hamiRIOmjOtQAFfXNeuAkhHOCsQSTv6m-TeIC6fah2J50W5P8EFJyHjoYu1cuJd-hRhQF-25psZ5-b-omoUs-9fZks" alt="Script Demo GIF" width="80%">
 </p>
 ---
 
